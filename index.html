@@ -5,41 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forrest Colson - Portfolio</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f4f4; text-align: center; margin-top: 50px; }
-        h1 { color: #333; }
-        a { color: #007bff; text-decoration: none; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
         .project {
             background-color: #fff;
             border-radius: 8px;
             padding: 20px;
-            margin: 20px;
+            margin: 20px auto;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             text-align: left;
-            display: inline-block;
-            width: 80%;
+            max-width: 800px;
         }
-        .project img {
-            max-width: 25%; /* Image resized to a quarter of its original size */
-            height: auto;   /* Maintain aspect ratio */
-            border-radius: 8px;
+
+            .project img {
+                max-width: 25%;
+                height: auto;
+                border-radius: 8px;
+                margin-bottom: 15px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            padding-top: 25px;
+            height: 0;
             margin-bottom: 15px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
         }
+
+            .video-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
     </style>
 </head>
 <body>
     <h1>Welcome to My Portfolio</h1>
     <p>Hi, I'm Forrest Colson.</p>
-    <p>Check out my projects below.</p>
+    <p>Check out my projects and my custom engine below.</p>
+
+    <div class="project">
+        <h2>Custom Game Engine</h2>
+        <div class="video-container">
+            <!-- empty embed; replace the src with your demo video ID -->
+            <iframe src="https://www.youtube.com/embed/" allowfullscreen></iframe>
+        </div>
+        <p><strong>Watch the engine demo</strong> above, or <a href="https://www.youtube.com/watch?v=">open it on YouTube</a>.</p>
+        <p><strong>Core Technologies:</strong></p>
+        <ul>
+            <li>C++17</li>
+            <li>Lua scripting (via LuaBridge)</li>
+            <li>GLM for math (vec2, vec3, etc.)</li>
+            <li>SDL2 for windowing, input, and audio</li>
+            <li>Box2D for physics and raycasting</li>
+            <li>RapidJSON for template loading</li>
+            <li>Custom EventBus & ParticleSystem</li>
+            <li>AudioDB, ImageDB, TextDB modules</li>
+        </ul>
+    </div>
 
     <div class="project">
         <h2>Pick It Up!</h2>
         <img src="https://umaira05.github.io/images/PickItUp.png" alt="Pick It Up Game Screenshot">
         <p><a href="https://www.youtube.com/watch?v=oPMJyvH2ZZw">Watch the Trailer</a></p>
         <p><a href="https://evmarcus.itch.io/pick-it-up">Download Pick It Up</a></p>
-        <p><strong>I collaborated with Evan Marcus, Umair Ahmed, Victor Schmitt, and Weston Pangle to create a 3D platformer party game where you play as a robot and compete to collect the most trash and toss it in the bin. We developed four levels and we genuinely enjoy playing it! Check it out!</p>
+        <p><strong>I collaborated with Evan Marcus, Umair Ahmed, Victor Schmitt, and Weston Pangle to create a 3D platformer party game where you play as a robot and compete to collect the most trash and toss it in the bin. We developed four levels and we genuinely enjoy playing it! Check it out!</strong></p>
         <p><strong>Technologies used:</strong> Unity, C#.</p>
     </div>
 
@@ -53,18 +103,15 @@
     <div class="project">
         <h2>Zelda-Like Game</h2>
         <p><a href="https://fcolson.itch.io/zelda-dungeon">Play Zelda-Like Game</a></p>
-        <p><strong>Tasks I did for this project:</strong> Developed grid-based movement, sword, bow, and boomerang mechanics. Created player sprites, Goriya, Gel enemies, water tiles, and pushable blocks. Designed a custom 2D Bow room with an audio manager and five custom rooms. Created a custom bat-Link collectible with fire animation for transitions.</p>
+        <p><strong>Tasks I did for this project:</strong> Developed grid-based movement, sword, bow, and boomerang mechanics. Created player sprites, Goriya, Gel enemies, water tiles, and pushable blocks. Designed a custom 2D Bow room with an audio manager and five custom rooms. Created a custom bat‑Link collectible with fire animation for transitions.</p>
         <p><strong>Technologies used:</strong> Unity, C#, Adobe Photoshop for sprite creation.</p>
     </div>
-    
+
     <div class="project">
         <h2>Car Level</h2>
         <p><a href="https://fcolson.itch.io/car-level">Play Car Level</a></p>
-        <p><strong>Tasks I did for this project:</strong> Followed the Unity Roll-a-Ball tutorial to become acclimated to Unity engine basics.</p>
+        <p><strong>Tasks I did for this project:</strong> Followed the Unity Roll‑a‑Ball tutorial to become acclimated to Unity engine basics.</p>
         <p><strong>Technologies used:</strong> Unity, C#.</p>
     </div>
-
-
-
 </body>
 </html>
