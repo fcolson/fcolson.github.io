@@ -66,21 +66,31 @@
 
     <div class="project">
         <h2>Custom Game Engine</h2>
-        <div class="video-container">
-            <!-- empty embed; replace the src with your demo video ID -->
-            <iframe src="https://www.youtube.com/embed/" allowfullscreen></iframe>
+
+        <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+            <iframe src="https://www.youtube.com/embed/FdcDLZ8gvjE"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    style="position: absolute; top:0; left: 0; width:100%; height:100%;">
+            </iframe>
         </div>
-        <p><strong>Watch the engine demo</strong> above, or <a href="https://www.youtube.com/watch?v=">open it on YouTube</a>.</p>
+
+        <p>
+            <strong>Watch the engine demo</strong> above, or
+            <a href="https://www.youtube.com/watch?v=FdcDLZ8gvjE" target="_blank" rel="noopener">open it on YouTube</a>.
+        </p>
+
         <p><strong>Core Technologies:</strong></p>
         <ul>
             <li>C++17</li>
-            <li>Lua scripting (via LuaBridge)</li>
-            <li>GLM for math (vec2, vec3, etc.)</li>
-            <li>SDL2 for windowing, input, and audio</li>
-            <li>Box2D for physics and raycasting</li>
-            <li>RapidJSON for template loading</li>
-            <li>Custom EventBus & ParticleSystem</li>
-            <li>AudioDB, ImageDB, TextDB modules</li>
+            <li>Lua scripting via LuaBridge</li>
+            <li>GLM for math vectors and matrices</li>
+            <li>SDL2 for windowing, input handling, and audio playback</li>
+            <li>Box2D for physics simulation and raycasting</li>
+            <li>RapidJSON for JSON-based template loading</li>
+            <li>Custom EventBus & ParticleSystem modules</li>
+            <li>AudioDB, ImageDB & TextDB resource managers</li>
         </ul>
     </div>
 
